@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * theme_options Variable
@@ -26,6 +26,6 @@ $theme_options = array(
 	),
 	'bootstrap'				=> array(
 		'version_3'			=> false,
-		'version_4'			=> false
+		'version_4'			=> true
 	)
 );

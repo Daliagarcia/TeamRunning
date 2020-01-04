@@ -10,9 +10,12 @@
 function dl_image_sizes( $sizes ) {
 
 	$add_sizes = array(
-		'slideshow'		=> __( 'Tamaño del slideshow' ),
-		'custom_logo'	=> __( 'Tamaño personalizado del logo' )
-	);
+'about' => __( 'Para las imágenes de informacion desplegada en la pagina de inicio' ),
+'carousel-images' => __( 'Para las imágenes del carousel superior y las imagenes de entrenamiento' ),
+'blog-square' => __( 'Para las imágenes de las entradas desplegadas en la página blog' ),
+'detail' => __( 'Para las imágenes de las entradas en su página de detalle' ),
+'blog-inicio' => __( 'Para las imágenes de las entradas del blog desplegadas en la pagina inicio' )
+ );
 
 	return array_merge( $sizes, $add_sizes );
 
@@ -30,8 +33,11 @@ function dl_image_sizes( $sizes ) {
  */
 if ( function_exists( 'add_theme_support' ) ) {
 
-	add_image_size( 'slideshow', 800, 600, true );			// Personalización del tamaño del slideshow
-	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
+	add_image_size( 'about', 599, 531, true );
+	add_image_size( 'carousel-images', 965, 728, true );
+	add_image_size( 'blog-square', 400, 400, true );
+	add_image_size( 'detail', 900, 260, true );
+	add_image_size( 'blog-inicio', 711, 876, true );		
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );
 

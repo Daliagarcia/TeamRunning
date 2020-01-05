@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="text-center mb-5">
-        <a href="blog.html" class="btn btn-warning btn-lg mt-5">Volver al Blog</a>
+        <a href="<?php echo get_the_permalink( $post = 6, $leavename = false );?>" class="btn btn-warning btn-lg mt-5">Volver al Blog</a>
       </div>
 </article>
 </main>

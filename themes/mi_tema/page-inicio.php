@@ -94,7 +94,7 @@
         </div>
 
         <div class="SectionBlog__link text-center">
-          <a href="blog.html" class="btn rounded-0 btn-warning btn-lg mt-5">Visita el blog</a>
+          <a href="<?php echo get_the_permalink( $post = 6, $leavename = false );?>" class="btn rounded-0 btn-warning btn-lg mt-5">Visita el blog</a>
         </div>
       </div>
     </section>

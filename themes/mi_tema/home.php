@@ -72,32 +72,25 @@
       <div class="container">
         <h2 class="text-center mb-3 SectionBlog__title">Blog</h2>
         <div class="card-deck">
-          <div class="card border-0 rounded-0">
-            <img class="card-img-top h-auto" src="<?php echo get_theme_file_uri(); ?>/assets/images/blog1.jpg" alt="fuerza y resistencia">
-            <div class="card-body">
-              <h5 class="card-title">Fuerza y Resistencia en el deporte</h5>
-              <p class="card-text">Cuando se habla de fuerza y deportes de resistencia, es normal en pensar en cómo mejorar nuestro físico de cara a un objetivo de alta exigencia y duración en el deporte.</p>
-              <a href="plantilla-item-blog.html" class="btn rounded-0 btn-outline-warning">Ver entrada</a>
-            </div>
-          </div>
+
+          <?php $arg = array(
+       'post_type' => 'post',
+       'posts_per_page' => 3
+       );
+       $get_arg = new WP_Query( $arg );
+      while ( $get_arg->have_posts() ) {
+      $get_arg->the_post();
+       ?>
 
           <div class="card border-0 rounded-0">
-            <img class="card-img-top h-auto" src="<?php echo get_theme_file_uri(); ?>/assets/images/blog2.jpg" alt="entrenar la mente">
+            <?php the_post_thumbnail('blog-square', array('class' => 'w-100 hauto'));?>
             <div class="card-body">
-              <h5 class="card-title">Entrenar la Mente</h5>
-              <p class="card-text">El éxito es un juego de la mente, por ello, el deportista debe entender que para cruzar la línea de meta el mayor obstáculo al cual debe enfrentarse no es el recorrido..</p>
-              <a href="plantilla-item-blog.html" class="btn rounded-0 btn-outline-warning">Ver entrada</a>
+              <h5 class="card-title"><?php the_title() ?></h5>
+              <p class="card-text"><?php the_excerpt(); ?></p>
+              <a href="<?php the_permalink(); ?>" class="btn rounded-0 btn-outline-warning">Ver entrada</a>
             </div>
           </div>
-
-          <div class="card border-0 rounded-0">
-            <img class="card-img-top h-auto" src="<?php echo get_theme_file_uri(); ?>/assets/images/blog3.jpg" alt="empezar a correr">
-            <div class="card-body">
-              <h5 class="card-title">¿Quieres empezar a correr?</h5>
-              <p class="card-text">El running es un deporte muy popular y las personas que buscan mejorar su estilo de vida usualmente escogen correr, ya que es de fácil acceso y bajo costo..</p>
-              <a href="plantilla-item-blog.html" class="btn rounded-0 btn-outline-warning">Ver entrada</a>
-            </div>
-          </div>
+       <?php } wp_reset_postdata(); ?>
         </div>
 
         <div class="SectionBlog__link text-center">

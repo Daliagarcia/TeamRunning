@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
-		<a class="navbar-brand" href="<?php bloginfo('url') ?>">Navbar</a>
+		<a class="navbar-brand logo" href="#">TEAMMORA<span class="subtitulo">Si no corres vuelas</span></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -12,7 +12,7 @@
 				'theme_location'	=> 'header-menu',
 				'depth'				=> 2,
 				'container'			=> false,
-				'menu_class'		=> 'navbar-nav mr-auto',
+				'menu_class'		=> 'navbar-nav ml-auto',
 				'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
 				'walker'			=> new WP_Bootstrap_Navwalker(),
 			) ); ?>

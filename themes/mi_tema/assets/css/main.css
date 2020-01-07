@@ -10124,5 +10124,13 @@ footer {
 .SectionMainPlantilla__content {
   text-align: justify;
 }
+.page-link {
+  color: #7A2177;
+}
+.page-item.active .page-link{
+  background-color: #7A2177;
+  border-color:#7A2177;
+  color: white;
+}
 
 /*# sourceMappingURL=main.css.map */

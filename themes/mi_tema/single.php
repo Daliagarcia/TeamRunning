@@ -13,6 +13,7 @@
 				<?php the_post_thumbnail('detail', array('class'
 				=> 'w-100 h-auto my-4')); ?>
 				<h4><?php the_category(' '); ?></h4>
+				<p><?php the_tags( '<span class="text-warning">#</span>', ' <span class="text-warning">#</span>', '' ); ?></p>
 </div>
 
 <div class="SectionMainPlantilla__content">

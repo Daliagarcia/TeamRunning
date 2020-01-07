@@ -21,17 +21,13 @@
 						</div>
 						<div class="col-md-8">
 							<?php the_excerpt() ?>
+							<p><?php the_tags( '<span class="text-warning">#</span>', ' <span class="text-warning">#</span>', '' ); ?></p>
 							<p class="text-right"><a href="<?php the_permalink() ?>" class="btn
 								btn-outline-warning">Ver entrada</a></p>
 							</div>
 						</div>
-
-						<div class="text-center mb-5">
-					    <a href="<?php echo get_the_permalink( $post = 6, $leavename = false );?>" class="btn btn-warning btn-lg mt-5">Volver al Blog</a>
-					   </div>
 					</article>
 				<?php }; ?>
-
 
 			<?php } else { ?>
 				<!-- Content -->

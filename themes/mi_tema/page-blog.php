@@ -27,17 +27,19 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4 mb-3">
-						<?php the_post_thumbnail('blog-square', array('class' => 'w-100 hauto'));
+						<?php the_post_thumbnail('blog-square', array('class' => 'img-fluid'));
 						?>
 					</div>
 					<div class="col-md-8">
 						<?php the_excerpt() ?>
+						<p><?php the_tags( '<span class="text-warning">#</span>', ' <span
+			         class="text-warning">#</span>', '' ); ?></p>
 						<p class="text-right"><a href="<?php the_permalink() ?>" class="btn
 							btn-outline-warning">Ver entrada</a></p>
 						</div>
 					</div>
 				</article>
-				
+
 			<?php } wp_reset_postdata(); ?>
 
 			<?php the_pagination( $get_arg ); ?>

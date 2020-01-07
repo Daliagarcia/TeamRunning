@@ -27,7 +27,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
         </ol>
-        
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
@@ -107,7 +107,7 @@
 
         </div>
         <div class="sectionEntrenamiento__description col-12 col-md-6 pt-5 text-left my-5">
-          <a href="#" class="btn rounded-0 sectionEntrenamiento__btn mr-3 mt-5">Ven a entrenar</a>
+          <a href="<?php echo get_the_permalink( $post = 13, $leavename = false );?>" class="btn rounded-0 sectionEntrenamiento__btn mr-3 mt-5">Ven a entrenar</a>
         </div>
       </div>
     </article>

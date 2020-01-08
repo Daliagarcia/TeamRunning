@@ -8,6 +8,7 @@
           </div>
           <div class="sectionAboutUs__content">
             <h2 class="sectionAboutUs__title text-center mt-5 mb-5">Quienes Somos?</h2>
+						<img src="<?php echo get_theme_file_uri(); ?>/assets/images/fondo.jpg" alt="pizza" class="img-fluid">
             <p>Somos un team de Running ubicado en Santiago de Chile y tenemos como objetivo motivar y preparar a personas para dar sus inicios en el deporte del running y correr desde 10 KM hasta una Maratón.</p>
             <p>Somos un equipo de corredores de Santiago enfocado en distancias de Maratón, Media Maratón y 10K, liderado por Raul Mora, profesor de Educación Física y deportista de alto rendimiento con experiencia en el deporte.</p>
             <p>Nuestra misión es motivar y enseñar a los corredores la importancia del entrenamiento guiado, mediante un plan especial y no dejando nada al azar, cambiando la mentalidad del atleta y trabajando activamente para alcanzar los objetivos.</p>

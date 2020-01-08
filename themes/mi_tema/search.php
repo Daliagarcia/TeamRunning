@@ -8,19 +8,20 @@
 
 			<?php while ( have_posts() ) { the_post(); ?>
 				<article class="my-5">
-					<div class="text-center my-3">
-						<p><i class="fas fa-calendar-alt"></i> <time datetime="<?php
-						the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time></p>
-						<h3><?php the_title() ?></h3>
-						<h4><?php the_category(' '); ?></h4>
-					</div>
 					<div class="row">
 						<div class="col-md-4 mb-3">
-							<?php the_post_thumbnail('blog-square', array('class' => 'w-100 hauto'));
-							?>
+							<?php the_post_thumbnail('blog-square', array('class' => 'img-fluid'));?>
 						</div>
 						<div class="col-md-8">
+							<div class="text-center my-3">
+								<p><i class="fas fa-calendar-alt"></i> <time datetime="<?php
+								the_time('Y-m-d') ?>"><?php the_time('d \d\e F \d\e Y') ?></time></p>
+								<h3><?php the_title() ?></h3>
+								<h4><?php the_category(' '); ?></h4>
+							</div>
 							<?php the_excerpt() ?>
+							<p><?php the_tags( '<span class="text-warning">#</span>', ' <span
+				         class="text-warning">#</span>', '' ); ?></p>
 							<p class="text-right"><a href="<?php the_permalink() ?>" class="btn
 								btn-outline-warning">Ver entrada</a></p>
 							</div>

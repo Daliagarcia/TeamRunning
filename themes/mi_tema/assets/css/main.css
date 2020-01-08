@@ -9954,15 +9954,16 @@ footer {
   font-size: 12px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  margin-top: 30px;
-  margin-right: 0;
-  position: absolute;
+  top: -10px;
+  position: relative;
+  display: block;
 }
 
 .logo {
   font-family: "Racing Sans One", cursive;
   font-weight: 700;
   font-size: 30px;
+  padding: 0;
 }
 
 /*.HeaderSection__image{

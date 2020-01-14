@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info.png" alt="pizza" class="img-fluid HeaderSection__image">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/info.png" alt="informacion" class="img-fluid HeaderSection__image">
       </div>
       <div class="col-md-6">
         <h1 class="pb-5 mt-5 text-center HeaderSection__title">QUIENES SOMOS?</h1>
